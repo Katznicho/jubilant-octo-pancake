@@ -57,6 +57,18 @@
 	color: white;
 	margin-top: -95%;
 	font-size: 20px;
+	font-weight: bold;
+  }
+  .lead-text-1{
+	color: black;
+	margin-top: 30%;
+  }
+  
+  .lead-text{
+	color: blue;
+	margin-top: 48%;
+	font-size: 17px;
+	font-weight: bold;
   }
   
   /* Override the padding to zero to use the space more efficiently */
