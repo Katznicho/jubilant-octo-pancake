@@ -34,11 +34,45 @@
 
 .circle {
 	background-color: blue;
+ /* Text color */
+	color: black;
+/* Make the circle size relative to its container */
 	border-radius: 50%;
-	/* Ensure the width and height are the same for a perfect circle */
-	width: 50%; /* Adjust based on your requirement */
-	padding-top: 50%; /* This creates an aspect ratio of 1:1 */
+/* Adjust based on your preference */	
+	width: 40%;
+	height: 40%; 
+/* Use padding-top to maintain aspect ratio for the circle */
+/* This makes the height equal to the width, adjust based on your width */
+	padding-top: 40%; 
 	position: relative;
+/* Center the circle horizontally */
+	margin: 0 auto; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+  }
+
+  .text{
+	color: white;
+	margin-top: -95%;
+	font-size: 20px;
+  }
+  
+  /* Override the padding to zero to use the space more efficiently */
+  .col-4 {
+	padding: 0;
+  }
+  
+  /* Adjust text position due to padding-top trick */
+  .circle::before {
+	content: '';
+	display: block;
+	padding-top: 50%; /* Adjust this to move your text vertically */
+  }
+  
+  .circle > * {
+	position: absolute;
   }
 
 @media (max-width: 991px) {
